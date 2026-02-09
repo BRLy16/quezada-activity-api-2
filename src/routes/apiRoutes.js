@@ -10,6 +10,11 @@ const {
     deleteDish,
 } = require('../controllers/dishController');
 
+const { 
+    createChef, getAllChefs, } = require('../controllers/chefController');
+
+    router.post('/chefs', createChef);
+    router.get('/chefs', getAllChefs);
 //1.
 router.get('/dishes', getAllDishes);
 router.post('/dishes', createDish);

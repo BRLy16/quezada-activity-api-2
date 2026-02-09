@@ -16,3 +16,10 @@
 14.
 15. **4. Testing:**
 16. - (![alt text](<Screenshot 2026-01-28 184359.png>))
+
+
+**--**
+17. "Why did I choose to Embed the Review?"
+- Answer: I chose to embed the review so it can be directly displayed within the application or webpage without requiring users to leave the platform, making the content more seamless and user-friendly. Also 1 user can can have few reviews, making it to be small data.
+18. "Why did I choose to Reference the Chef?"
+- Answer: I referenced the chef in the code to properly attribute the source of the data or content, maintain credibility, and follow ethical coding practices by acknowledging the original creator. It has an unique id that is linked for every chef.
