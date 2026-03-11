@@ -3,8 +3,7 @@ const router = express.Router();
 
 // Import the controller
 const {protect, authorize}= require('../middleware/authMiddleware');
-router.get('/', getDishes);
-router.post('/', protect, authorize('admin', 'manager'), createDish);
+
 const {
     getAllDishes,
     createDish,
@@ -24,5 +23,6 @@ router.post('/dishes', createDish);
 router.get('/dishes/:id', getDishById);
 router.put('/dishes/:id', updateDish);
 router.delete('/dishes/:id', deleteDish);
+router.post('/', protect, authorize('admin', 'manager'), createDish);
 
 module.exports = router;
