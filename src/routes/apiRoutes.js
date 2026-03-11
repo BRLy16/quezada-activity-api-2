@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 
 // Import the controller
+const {protect, authorize}= require('../middleware/authMiddleware');
+router.get('/', getDishes);
+router.post('/', protect, authorize('admin', 'manager'), createDish);
 const {
     getAllDishes,
     createDish,
